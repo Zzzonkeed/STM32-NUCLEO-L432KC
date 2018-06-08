@@ -36,9 +36,9 @@ En este ejemplo se programaron 3 LED con los pines PA_8, PA_9 y PA_10, los cuale
 
   /* USER CODE END WHILE */
 	  HAL_GPIO_WritePin(LED1_GPIO_Port,LED1_Pin,1);
-	  HAL_GPIO_WritePin(GPIOA,LED2_Pin,1);
-	  HAL_GPIO_WritePin(GPIOA,LED3_Pin,0);
-	  HAL_GPIO_WritePin(GPIOA,LED4_Pin,0);
+	  HAL_GPIO_WritePin(GPIOA,LED2_Pin,1); //PA_8
+	  HAL_GPIO_WritePin(GPIOA,LED3_Pin,0); //PA_9
+	  HAL_GPIO_WritePin(GPIOA,LED4_Pin,0); //PA_10
 	  HAL_Delay(500);
 	  HAL_GPIO_WritePin(GPIOA,LED2_Pin,0);
 	  HAL_GPIO_WritePin(GPIOA,LED3_Pin,1);
